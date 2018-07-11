@@ -1,0 +1,17 @@
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\obj\Debug\KomodoGreet.csprojAssemblyReference.cache
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\obj\Debug\KomodoGreet.csproj.CoreCompileInputs.cache
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.exe.config
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.exe
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.pdb
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.Biz.exe
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.Contracts.exe
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.Data.exe
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.Biz.pdb
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.Biz.exe.config
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.Contracts.pdb
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.Contracts.exe.config
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.Data.pdb
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\bin\Debug\KomodoGreet.Data.exe.config
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\obj\Debug\KomodoGreet.csproj.CopyComplete
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\obj\Debug\KomodoGreet.exe
+C:\Users\A217991\Documents\Visual Studio 2017\Projects\KomodoGreet\KomodoGreet\obj\Debug\KomodoGreet.pdb
