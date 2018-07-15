@@ -23,8 +23,6 @@ namespace KomodoGreet.Data
         public string ZipCode { get; set; }
         public CustomerType CustomerType { get; set; }
         
-        public Customer() { }
-
         public Customer(string firstName, string lastName, string streetAddress,
             string city, string state, string zipCode, CustomerType customerType)
         {

@@ -23,7 +23,7 @@ namespace KomodoGreet.BLL
                 case CustomerType.Potential:
                     return new Customer(firstName, lastName, streetAddress, city, state, zipCode, CustomerType.Potential);
                 default:
-                    throw new Exception("Could not create a new customer.");
+                    throw new Exception("Unknown customer type");
             }
         }
 

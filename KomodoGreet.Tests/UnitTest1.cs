@@ -9,7 +9,7 @@ namespace KomodoGreet.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void Customer_CreatePotentialCustomer_ShouldSucceed()
+        public void CustomerRepository_CreateCustomer_ShouldDisplayDetailsForPotentialCustomer()
         {
             //Arrange
             var mockConsole = new MockConsole(new string[]
@@ -20,13 +20,12 @@ namespace KomodoGreet.Tests
             customerUI.Run();
 
             //Assert
-            //TODO - remove: var customerRepository = customerUI.CustomerRepository;
             var outputText = mockConsole.Output;
             StringAssert.Contains(outputText, "Doe, Jane - Potential");
         }
 
         [TestMethod]
-        public void Customer_CreatePastCustomer_ShouldSucceed()
+        public void CustomerRepository_CreateCustomer_ShouldDisplayDetailsForPastCustomer()
         {
             //Arrange
             var mockConsole = new MockConsole(new string[]
@@ -37,13 +36,12 @@ namespace KomodoGreet.Tests
             customerUI.Run();
 
             //Assert
-            //TODO - remove: var customerRepository = customerUI.CustomerRepository;
             var outputText = mockConsole.Output;
             StringAssert.Contains(outputText, "Smith, John - Past");
         }
 
         [TestMethod]
-        public void Customer_CreateCurrentCustomer_ShouldSucceed()
+        public void CustomerRepository_CreateCustomer_ShouldDisplayDetailsForCurrentCustomer()
         {
             //Arrange
             var mockConsole = new MockConsole(new string[]
@@ -60,7 +58,7 @@ namespace KomodoGreet.Tests
         }
 
         [TestMethod]
-        public void Customer_SearchCustomer_ShouldSucceed()
+        public void CustomerRepository_Search_ShouldReturnDetailsForCustomerByLastName()
         {
             //Arrange
             var mockConsole = new MockConsole(new string[]
@@ -77,7 +75,7 @@ namespace KomodoGreet.Tests
         }
 
         [TestMethod]
-        public void Customer_SearchCustomerNotInList_ShouldSucceed()
+        public void CustomerRepository_Search_ShouldReturnNoCustomerMessageIfNoMatch()
         {
             //Arrange
             var mockConsole = new MockConsole(new string[]
