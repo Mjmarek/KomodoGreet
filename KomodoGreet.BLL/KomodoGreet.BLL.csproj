@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{910C2E5C-D6A1-4DB2-9C98-2D44C7FA0838}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>KomodoGreet.Biz</RootNamespace>
-    <AssemblyName>KomodoGreet.Biz</AssemblyName>
+    <ProjectGuid>{1FF9993D-EC71-44A1-8AB7-F19DCB7361B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KomodoGreet.BLL</RootNamespace>
+    <AssemblyName>KomodoGreet.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,17 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerRepository.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\KomodoGreet.Contracts\KomodoGreet.Contracts.csproj">
-      <Project>{32032C4B-57B5-491F-A394-35EFFA9F22AC}</Project>
-      <Name>KomodoGreet.Contracts</Name>
-    </ProjectReference>
     <ProjectReference Include="..\KomodoGreet.Data\KomodoGreet.Data.csproj">
       <Project>{7160AFD2-613B-4F62-8720-132392AD1FC8}</Project>
       <Name>KomodoGreet.Data</Name>

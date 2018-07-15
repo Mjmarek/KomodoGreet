@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using KomodoGreet.Biz;
+using KomodoGreet.BLL;
 using KomodoGreet.Contracts;
 using KomodoGreet.Data;
 
@@ -66,7 +66,7 @@ namespace KomodoGreet
             _console.WriteLine("What type of customer is this?\n" +
                                "1: Current\n" +
                                "2: Past\n" +
-                               "3: Potentional\n");
+                               "3: Potentional");
             string selection = _console.ReadLine();
             int selectionType = int.Parse(selection);
             CustomerType userType = (CustomerType) selectionType;
@@ -89,7 +89,7 @@ namespace KomodoGreet
             _console.WriteLine("What is the customer's zipcode?");
             string userZip = _console.ReadLine();
 
-            var customer = new Customer(userFirst, userLast, userAddress, userCity, userState, userZip, userType);
+            var customer = CustomerRepository.Create(userFirst, userLast, userAddress, userCity, userState, userZip, userType);
             CustomerRepository.AddCustomerToList(customer);
 
             _console.Clear();
@@ -103,7 +103,7 @@ namespace KomodoGreet
 
             foreach (var customer in customers)
             {
-                _console.WriteLine($"{customer.LastName}, {customer.FirstName} - {customer.CustomerType}");
+                _console.WriteLine($"{customer.LastName}, {customer.FirstName} - {customer.CustomerType}\n");
             }
         }
 
@@ -111,16 +111,23 @@ namespace KomodoGreet
         {
             _console.Clear();
 
-            _console.WriteLine("Please enter the last name of the customer you'd like to search for:\n");
+            _console.WriteLine("Please enter the last name of the customer you'd like to search for:");
             string searchLastName = _console.ReadLine();
 
             var customers = CustomerRepository.GetCustomersByName(searchLastName);
 
-            foreach (var customer in customers)
+            if (customers.Count == 0)
             {
-                _console.WriteLine($"{customer.FirstName} {customer.LastName}\n" +
-                                   $"{customer.StreetAddress}\n" +
-                                   $"{customer.City}, {customer.State} {customer.ZipCode}");
+                _console.WriteLine("There are no customers with that last name.\n");
+            }
+            else
+            {
+                foreach (var customer in customers)
+                {
+                    _console.WriteLine($"{customer.FirstName} {customer.LastName}\n" +
+                                       $"{customer.StreetAddress}\n" +
+                                       $"{customer.City}, {customer.State} {customer.ZipCode}\n");
+                }
             }
         }
     }

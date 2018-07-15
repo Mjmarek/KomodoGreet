@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KomodoGreet.Biz")]
+[assembly: AssemblyTitle("KomodoGreet.BLL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KomodoGreet.Biz")]
+[assembly: AssemblyProduct("KomodoGreet.BLL")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("910c2e5c-d6a1-4db2-9c98-2d44c7fa0838")]
+[assembly: Guid("1ff9993d-ec71-44a1-8ab7-f19dcb7361b6")]
 
 // Version information for an assembly consists of the following four values:
 //

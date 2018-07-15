@@ -20,7 +20,7 @@ namespace KomodoGreet.Tests
             customerUI.Run();
 
             //Assert
-            var customerRepository = customerUI.CustomerRepository;
+            //TODO - remove: var customerRepository = customerUI.CustomerRepository;
             var outputText = mockConsole.Output;
             StringAssert.Contains(outputText, "Doe, Jane - Potential");
         }
@@ -37,7 +37,7 @@ namespace KomodoGreet.Tests
             customerUI.Run();
 
             //Assert
-            var customerRepository = customerUI.CustomerRepository;
+            //TODO - remove: var customerRepository = customerUI.CustomerRepository;
             var outputText = mockConsole.Output;
             StringAssert.Contains(outputText, "Smith, John - Past");
         }
@@ -74,6 +74,23 @@ namespace KomodoGreet.Tests
             var customerRepository = customerUI.CustomerRepository;
             var outputText = mockConsole.Output;
             StringAssert.Contains(outputText, "52 N. Police Box Lane");
+        }
+
+        [TestMethod]
+        public void Customer_SearchCustomerNotInList_ShouldSucceed()
+        {
+            //Arrange
+            var mockConsole = new MockConsole(new string[]
+                {"1", "1", "Amy", "Pond", "52 N. Police Box Lane", "Chicago", "IL", "60630", "3", "Smith"});
+            var customerUI = new CustomerUI(mockConsole);
+
+            //Act
+            customerUI.Run();
+
+            //Assert
+            var customerRepository = customerUI.CustomerRepository;
+            var outputText = mockConsole.Output;
+            StringAssert.Contains(outputText, "There are no customers with that last name.");
         }
     }
 }

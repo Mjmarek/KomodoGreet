@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KomodoGreet.Biz\KomodoGreet.Biz.csproj">
-      <Project>{910C2E5C-D6A1-4DB2-9C98-2D44C7FA0838}</Project>
-      <Name>KomodoGreet.Biz</Name>
+    <ProjectReference Include="..\KomodoGreet.BLL\KomodoGreet.BLL.csproj">
+      <Project>{1FF9993D-EC71-44A1-8AB7-F19DCB7361B6}</Project>
+      <Name>KomodoGreet.BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\KomodoGreet.Contracts\KomodoGreet.Contracts.csproj">
       <Project>{32032C4B-57B5-491F-A394-35EFFA9F22AC}</Project>
